@@ -12,7 +12,7 @@ nav a:hover,nav a.active{color:var(--ink);background:rgba(255,255,255,.08)}
 main,footer{width:min(calc(100% - 40px),980px);margin-right:auto;margin-left:auto}
 .profile-panel{display:grid;grid-template-columns:220px minmax(0,1fr);align-items:start;gap:48px;margin:46px auto 0;padding:34px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(135deg,rgba(91,100,93,.98),rgba(74,82,76,.98));box-shadow:0 24px 70px rgba(21,26,22,.18)}
 .profile-card{overflow:hidden;align-self:start;border:1px solid var(--line);border-radius:8px;background:rgba(37,43,38,.26)}
-.avatar{height:205px;display:grid;place-items:center;background:linear-gradient(145deg,#dce2da,#aeb8af);color:#303630}
+.avatar{height:205px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(145deg,#dce2da,#aeb8af);color:#303630}
 .avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 28%}
 .avatar span{display:grid;place-items:center;width:104px;height:104px;border:4px solid #303630;border-radius:50%;font-family:"Inter",sans-serif;font-size:65px;font-weight:600;line-height:1;letter-spacing:-.07em}
 .profile-card h2{margin:16px 16px 2px;font-size:18px}.profile-card>p{margin:0 16px 14px;color:var(--muted);font-size:13px}
