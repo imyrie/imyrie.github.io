@@ -3,68 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Myrie is a designer and developer creating thoughtful digital experiences.">
+  <meta name="description" content="Myrie — designer and developer.">
   <title>Myrie — Designer & Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="#top" aria-label="Myrie home">
-      <span>M</span><span>Y</span><span>R</span>
-    </a>
+    <a class="brand" href="#top" aria-label="Back to top"><span>M</span> Myrie</a>
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#publications">Publications</a>
       <a href="#projects">Projects</a>
-      <a href="#resume">Resume<span aria-hidden="true">↗</span></a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="button button-small" href="#contact">Let's talk</a>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <a class="available" href="#contact"><i></i> Available for select projects <span>↗</span></a>
-      <h1>I create <span class="accent accent-spark">✦</span> thoughtful digital<br>experiences that <span class="accent accent-wave">feel alive.</span></h1>
-      <p class="intro">I'm Myrie, a designer and developer turning complex ideas into clear, character-filled experiences for the web.</p>
-      <div class="hero-actions">
-        <a class="button button-primary" href="#work">Explore my work <span>↓</span></a>
-        <a class="text-link" href="#about">A little about me <span>↗</span></a>
-      </div>
-      <div class="scroll-note"><span></span> Scroll to explore</div>
-    </section>
+    <section class="profile-panel" aria-labelledby="name">
+      <aside class="profile-card">
+        <div class="avatar" aria-hidden="true"><span>M</span></div>
+        <h2>Myrie</h2>
+        <p>Designer &amp; Developer</p>
+        <div class="profile-links">
+          <a href="#projects" aria-label="View projects">↗</a>
+          <a href="#resume" aria-label="View resume">R</a>
+          <a href="mailto:hello@example.com" aria-label="Email Myrie">@</a>
+        </div>
+      </aside>
 
-    <section class="work" id="work">
-      <div class="section-heading">
-        <div><span class="eyebrow">Selected work</span><h2>A few things I've made.</h2></div>
-        <p>Projects built with curiosity, care, and a healthy obsession with the details.</p>
-      </div>
-      <div class="project-card project-one">
-        <div class="browser-chrome"><span></span><span></span><span></span><b>myrie.design/project</b></div>
-        <div class="project-visual">
-          <div class="mini-card"><small>CASE STUDY 01</small><strong>Making ideas<br>easy to find.</strong><em>Explore the project →</em></div>
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orb"></div>
+      <div class="profile-intro">
+        <p class="kicker">Hello, I'm</p>
+        <h1 id="name">Myrie<span class="highlight">✦</span></h1>
+        <p class="role">I design and build digital experiences.</p>
+        <div class="tags" aria-label="Areas of focus">
+          <span>Design</span><span>Development</span><span>Digital Experiences</span>
+        </div>
+        <div class="actions">
+          <a class="button primary" href="#projects">View projects <span>↓</span></a>
+          <a class="button secondary" href="#contact">Contact me</a>
         </div>
       </div>
-      <div class="project-meta"><span>Digital experience · Design & development</span><span>2026</span></div>
     </section>
 
-    <section class="about" id="about">
-      <span class="eyebrow">About me</span>
-      <div class="about-grid">
-        <h2>Equal parts creative<br>and <span>technical.</span></h2>
-        <div><p>I love the space where visual design meets technology. That's where I turn rough ideas into useful, memorable things.</p><p>My approach is collaborative, curious, and grounded in the belief that good design should feel obvious once you see it.</p></div>
+    <section class="content-section about-section" id="about">
+      <header class="section-title"><span>Profile</span><h2>About</h2></header>
+      <div class="section-body">
+        <p>Designer and developer focused on clear, useful digital work.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="publications">
+      <header class="section-title"><span>Writing</span><h2>Publications</h2></header>
+      <div class="section-body empty-state">
+        <p>Selected writing and publications will appear here.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="projects">
+      <header class="section-title"><span>Selected work</span><h2>Projects</h2></header>
+      <div class="section-body project-list">
+        <article class="project-row">
+          <div><span class="project-number">01</span><h3>Digital Experience</h3></div>
+          <p>Design &amp; Development</p>
+          <a href="#" aria-label="Open Digital Experience project">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section" id="resume">
+      <header class="section-title"><span>Experience</span><h2>Resume</h2></header>
+      <div class="section-body resume-row">
+        <p>Resume available upon request.</p>
+        <a class="inline-link" href="mailto:hello@example.com?subject=Resume request">Request resume ↗</a>
+      </div>
+    </section>
+
+    <section class="content-section contact-section" id="contact">
+      <header class="section-title"><span>Get in touch</span><h2>Contact</h2></header>
+      <div class="section-body">
+        <a class="email-link" href="mailto:hello@example.com">hello@example.com <span>↗</span></a>
       </div>
     </section>
   </main>
 
-  <footer id="contact">
-    <p>Have something interesting in mind?</p>
-    <a href="mailto:hello@example.com">Let's make it happen. <span>↗</span></a>
-    <div class="footer-row"><span>© <span id="year"></span> Myrie</span><span>Made with care and good music.</span></div>
-  </footer>
+  <footer><span>© <span id="year"></span> Myrie</span><a href="#top">Back to top ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
